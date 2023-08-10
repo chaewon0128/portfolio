@@ -6,6 +6,9 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'press-start': ['"Press Start 2P"', 'cursive'],
+          },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -14,5 +17,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+
+    require('tailwind-animatecss')
+  ],
 }
