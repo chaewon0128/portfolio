@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 import Layout from '@/components/layout/Layout';
 import TerminalLayout from '@/components/layout/TerminalLayout';
 import { useState } from 'react';
-import { useCycle } from 'framer-motion';
+
 
 export default function Home() {
   const router = useRouter();
@@ -16,17 +16,18 @@ export default function Home() {
   }
   return (
     <Layout>
-      <TerminalLayout isClose={isClose}>
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter.typeString(`Hello, I'm <span style="color: #74b9ff">Chae won</span>, a Front-End developer!`)
-              .pauseFor(1000)
-              .start()
-          }}
-        />
-        <button onClick={onProject} className='bg-red-200 px-5 py-1 mt-10 rounded-lg text-lg font-semibold text-slate-700'>My projects</button>
-      </TerminalLayout>
-
+      <main className='flex justify-center items-center min-h-screen'>
+        <TerminalLayout isClose={isClose} width='xl'>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString(`Hello, I'm <span style="color: #74b9ff">Chae won</span>, a Front-End developer!`)
+                .pauseFor(1000)
+                .start()
+            }}
+          />
+          <button onClick={onProject} className='bg-red-200 px-5 py-1 mt-10 rounded-lg text-lg font-semibold text-slate-700'>My projects</button>
+        </TerminalLayout>
+      </main>
     </Layout>
   )
 }
