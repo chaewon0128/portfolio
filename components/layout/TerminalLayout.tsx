@@ -25,8 +25,8 @@ export default function TerminalLayout({ children, isClose = false, width }: ITe
             <motion.div initial={{ scaleX: isClose ? 1 : 0 }} animate={{ scaleX: isClose ? 0 : 1 }} transition={{
                 type: "spring",
                 restDelta: 0.5
-            }} className={`bg-[#3B3B3B] shadow-black shadow-2xl  ${size[width]} `} >
-                <div className='pl-2 space-x-1 bg-slate-50' >
+            }} className={`bg-[#3B3B3B] shadow-black shadow-2xl z-10 ${size[width]} `} >
+                <div className='pl-2 space-x-1 bg-slate-50 z-40' >
                     <Ball color="red" />
                     <Ball color="yellow" />
                     <Ball color="green" />
