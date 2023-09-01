@@ -10,6 +10,8 @@ module.exports = {
       'press-start': ['"Press Start 2P"', 'cursive'],
       'Bebas-neue': ['Bebas Neue', 'sans-serif'],
       'bodoni-moda': ['Bodoni Moda', 'serif'],
+      'nanum' : ['Nanum Gothic Coding', 'cursive'],
+
           },
     extend: {
       backgroundImage: {
