@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <Layout>
       <main className='flex justify-center items-center min-h-screen'>
-        <TerminalLayout isClose={isClose} width='xl'>
+        <TerminalLayout isClose={isClose} >
           <Typewriter
             onInit={(typewriter) => {
               typewriter.typeString(`Hello, I'm <span style="color: #74b9ff">Chae won</span>, a Front-End developer!`)
@@ -25,7 +25,7 @@ export default function Home() {
                 .start()
             }}
           />
-          <button onClick={onProject} className='bg-red-200 px-5 py-1 mt-10 rounded-lg text-lg font-semibold text-slate-700'>My projects</button>
+          <button onClick={onProject} className='bg-red-200 px-5 py-1 mt-10 rounded-lg text-sm  md:text-lg font-semibold text-slate-700'>My projects</button>
         </TerminalLayout>
       </main>
     </Layout>
