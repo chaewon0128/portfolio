@@ -1,4 +1,5 @@
-import { RefObject } from "react"
+import { gsap } from "gsap";
+import { RefObject, useLayoutEffect } from "react"
 
 interface ILanding {
     mainRef: RefObject<HTMLDivElement>
@@ -6,6 +7,16 @@ interface ILanding {
 }
 
 export default function LandingPart({ mainRef }: ILanding) {
+
+    useLayoutEffect(() => {
+        const tl = gsap.timeline()
+        let ctx = gsap.context(() => {
+            tl.from(".title", { opacity: 0, y: 100, stagger: 0.5, duration: 2 })
+                .to(".accent-text", { opacity: 0.3, stagger: 0.3 })
+        }, mainRef);
+
+        return () => ctx.kill();
+    }, [mainRef])
     return (
         <main className='relative flex justify-around flex-col text-white' ref={mainRef}>
             <div className='relative font-bodoni-moda flex flex-col min-h-screen justify-center text-[90px] leading-[70px] md:text-[100px] md:leading-[90px] lg:text-[150px] lg:leading-[130px] '>
