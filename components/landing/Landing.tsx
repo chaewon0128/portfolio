@@ -1,24 +1,19 @@
 import { gsap } from "gsap";
-import { RefObject, useLayoutEffect } from "react"
+import { useLayoutEffect, useRef } from "react"
 
-interface ILanding {
-    mainRef: RefObject<HTMLDivElement>
-
-}
-
-export default function LandingPart({ mainRef }: ILanding) {
-
+export default function LandingPart() {
+    const landingRef = useRef<HTMLDivElement>(null)
     useLayoutEffect(() => {
         const tl = gsap.timeline()
         let ctx = gsap.context(() => {
             tl.from(".title", { opacity: 0, y: 100, stagger: 0.5, duration: 2 })
                 .to(".accent-text", { opacity: 0.3, stagger: 0.3 })
-        }, mainRef);
+        }, landingRef);
 
         return () => ctx.kill();
-    }, [mainRef])
+    }, [landingRef])
     return (
-        <main className='relative flex justify-around flex-col text-white' ref={mainRef}>
+        <main className='relative flex justify-around flex-col text-white' ref={landingRef}>
             <div className='relative font-bodoni-moda flex flex-col min-h-screen justify-center text-[90px] leading-[70px] md:text-[100px] md:leading-[90px] lg:text-[150px] lg:leading-[130px] '>
                 <div className='hidden md:block w-full h-screen '>
                     <video src={require('../../public/assets/whale.mp4')} loop={true} autoPlay={true} className="h-[100%] w-full object-fill" />
