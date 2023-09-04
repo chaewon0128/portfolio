@@ -1,4 +1,4 @@
-import { MagnifyIcon } from "@/assets/icons";
+import { MagnifyIcon } from "@/icons/icons";
 import Layout from "../layout/Layout";
 
 

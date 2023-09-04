@@ -1,4 +1,4 @@
-import { HeartIcon } from "@/assets/icons";
+import { HeartIcon } from "@/icons/icons";
 
 export default function Navigation() {
     return (
