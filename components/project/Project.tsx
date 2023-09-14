@@ -11,7 +11,6 @@ export default function Project() {
     gsap.registerPlugin(ScrollTrigger);
     const projects = useContext(ProjectContext)
 
-    console.log(projects)
     useEffect(() => {
         const pin = gsap.fromTo(
             sectionRef.current,
