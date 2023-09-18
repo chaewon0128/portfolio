@@ -1,5 +1,5 @@
 import Layout from '@/components/layout/Layout';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Loading from '@/components/loading/Loading';
 import Navigation from '@/components/navigation/Navigation';
 import Footer from '@/components/footer/Footer';
@@ -7,8 +7,6 @@ import LandingPart from '@/components/landing/Landing';
 import AboutMe from '@/components/aboutMe/AboutMe';
 import Project from '@/components/project/Project';
 import Overlay from '@/components/overlay/Overlay';
-import MySkill from '@/components/mySkill/MySkill';
-
 
 export default function About() {
     const [isLoading, setIsLoading] = useState(true)
@@ -35,15 +33,11 @@ export default function About() {
                     <Navigation />
                     <LandingPart />
                     <Overlay color='blue' />
-                    <AboutMe onNavigate={onNavigate} />
-                    <Overlay color='black' />
-                    <MySkill />
+                    <AboutMe />
                     <Project />
                     <Footer onNavigate={onNavigate} />
-
                 </>
             )}
-
         </Layout>
     );
 }

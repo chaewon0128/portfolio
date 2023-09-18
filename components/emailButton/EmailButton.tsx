@@ -1,6 +1,3 @@
-
-
-
 const EmailButton = () => {
     const openEmailClient = () => {
         const emailAdress = "juh7814@gamil.com";
