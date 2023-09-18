@@ -11,6 +11,7 @@ module.exports = {
       'Bebas-neue': ['Bebas Neue', 'sans-serif'],
       'bodoni-moda': ['Bodoni Moda', 'serif'],
       'nanum' : ['Nanum Gothic Coding', 'cursive'],
+      'be-vietnam' : ['Be Vietnam Pro', 'sans-serif'],
 
           },
     extend: {
