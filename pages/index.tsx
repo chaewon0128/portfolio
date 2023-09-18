@@ -16,7 +16,7 @@ export default function Home() {
   }
   return (
     <Layout>
-      <main className='flex justify-center items-center min-h-screen'>
+      <main className='flex items-center justify-center min-h-screen'>
         <TerminalLayout isClose={isClose} >
           <Typewriter
             onInit={(typewriter) => {
@@ -25,7 +25,7 @@ export default function Home() {
                 .start()
             }}
           />
-          <button onClick={onProject} className='bg-red-200 px-5 py-1 mt-10 rounded-lg text-sm  md:text-lg font-semibold text-slate-700'>My projects</button>
+          <button onClick={onProject} className='px-5 py-1 mt-10 text-sm font-semibold bg-red-200 rounded-lg md:text-lg text-slate-700'>My projects</button>
         </TerminalLayout>
       </main>
     </Layout>
