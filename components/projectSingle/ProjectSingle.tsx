@@ -30,7 +30,6 @@ export default function ProjectSingle({ project }: ProjectSingleType) {
                 trigger: showRef.current,
                 start: 'top 30%',
                 end: 'top',
-                markers: true,
             },
         })
         let ctx = gsap.context(() => {
