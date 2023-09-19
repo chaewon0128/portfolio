@@ -7,6 +7,7 @@ import LandingPart from '@/components/landing/Landing';
 import AboutMe from '@/components/aboutMe/AboutMe';
 import Project from '@/components/project/Project';
 import Overlay from '@/components/overlay/Overlay';
+import ProjectTitle from '@/components/projectTitle/ProjectTitle';
 
 export default function About() {
     const [isLoading, setIsLoading] = useState(true)
@@ -33,6 +34,7 @@ export default function About() {
                     <LandingPart />
                     <Overlay color='blue' />
                     <AboutMe />
+                    <ProjectTitle />
                     <Project />
                     <Footer onNavigate={onNavigate} />
                 </>
