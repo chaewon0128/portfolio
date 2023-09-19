@@ -20,7 +20,7 @@ export default function AboutMe() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: introduceRef.current,
-                start: 'top 30%',
+                start: 'top 70%',
                 end: 'top',
             },
         })
@@ -37,7 +37,7 @@ export default function AboutMe() {
     }, [])
 
     return (
-        <div className='relative w-full min-h-screen px-10 2xl:px-[300px] mt-[200px] ' id="about" ref={introduceRef}>
+        <div className='relative w-full min-h-screen px-10 2xl:px-[300px]  ' id="about" ref={introduceRef}>
             <h2 className='title text-[3em] xl:text-[9em] font-be-vietnam text-white '><span className='highlite inline-block bg-lime-300 text-black w-36 lg:w-40 xl:w-[450px] text-center'>  WHO </span> <br /> ARE YOU?</h2>
             <button className='section font-be-vietnam text-black bg-lime-300 px-3 py-2 xl:px-6 xl:py-4 xl:text-[20px] rounded-full absolute right-10 2xl:right-[300px] top-15 lg:top-24 hover:bg-slate-400 hover:text-white' onClick={onMoveContact}>Contact Me</button>
             <section className='mt-10 text-white section md:text-right'>
