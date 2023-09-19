@@ -7,7 +7,6 @@ import { ProjectContext } from "@/store/page";
 export default function Project() {
     const sectionRef = useRef<HTMLDivElement>(null)
     const triggerRef = useRef<HTMLDivElement>(null)
-
     gsap.registerPlugin(ScrollTrigger);
     const projects = useContext(ProjectContext)
 
@@ -27,7 +26,6 @@ export default function Project() {
                     end: "3000 top",
                     scrub: 0.6,
                     pin: true,
-                    markers: true,
                 },
             }
         );
@@ -35,9 +33,10 @@ export default function Project() {
             pin.kill();
         };
     }, []);
+
     return (
 
-        <section id='work' className="scroll-section-outer overflow-hidden">
+        <section id='work' className="overflow-hidden scroll-section-outer">
             <div ref={triggerRef}>
                 <div ref={sectionRef} className="scroll-section-inner h-[100vh] w-[400vw] flex flex-row relative ">
                     {projects.map((project: any) => (

@@ -1,8 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import MySkill from '../mySkill/MySkill';
-import AboutMe from '../aboutMe/AboutMe';
 
 interface IOverlay {
     color: string,
@@ -24,8 +22,8 @@ export default function Overlay({ color }: IOverlay) {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: changeRef.current,
-                start: 'top -5%',
-                end: 'top top',
+                start: 'top 30%',
+                end: 'top ',
             },
         })
         let ctx = gsap.context(() => {
