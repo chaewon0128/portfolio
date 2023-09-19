@@ -28,7 +28,7 @@ export default function ProjectSingle({ project }: ProjectSingleType) {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: showRef.current,
-                start: 'top 30%',
+                start: 'top 10%',
                 end: 'top',
             },
         })
@@ -40,8 +40,8 @@ export default function ProjectSingle({ project }: ProjectSingleType) {
     }, [])
 
     return (
-        <div className="scroll-section h-[100vh] w-[100vw] flex flex-col justify-center items-center relative text-yellow-50  pt-28 lg:px-[200px] " ref={showRef}>
-            <div className="section relative w-[500px] h-96 bottom-[150px] lg:w-[700px] lg:h-[500px] ">
+        <div className="scroll-section h-[100vh] w-[100vw] my-10 flex flex-col justify-center items-center relative text-yellow-50  pt-28 lg:px-[200px] " ref={showRef}>
+            <div className="section relative w-[500px] h-96 bottom-[150px] lg:w-[600px] lg:h-[400px]">
                 <Image src={imageUrl} alt={`${project.name}의 이미지`} fill />
             </div>
             <section className=" section w-[80%] h-[250px] xl:h-[330px] md:flex md:justify-center md:gap-10 lg:gap-10 xl:gap-[100px]">
