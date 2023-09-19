@@ -36,7 +36,7 @@ export default function Project() {
 
     return (
 
-        <section id='work' className="overflow-hidden scroll-section-outer">
+        <section id='project' className="overflow-hidden scroll-section-outer">
             <div ref={triggerRef}>
                 <div ref={sectionRef} className="scroll-section-inner h-[100vh] w-[400vw] flex flex-row relative ">
                     {projects.map((project: any) => (
