@@ -14,7 +14,7 @@ export function ProjectDataContext({ children }: projectDataType) {
             image: "/webcafePage.png",
             url: "https://chaewon0128.github.io/html5",
             github: "https://github.com/chaewon0128/html5",
-            introduction: '사용자들이 더 나은 웹 경험을 할 수 있도록 웹접근성을 엄격하게 준수하였습니다. 스크린 리더 및 검색 엔진에 유용할 수 있도록 적절한 시멘틱 HTML5 요소를 사용하여 마크업 하였습니다.'
+            introduction: '웹 접근성과 HTML5 시멘틱 마크업 사용을 준수하여 제작한 웹 사이트 입니다.'
         },
         {
             id: 2,
@@ -32,7 +32,7 @@ export function ProjectDataContext({ children }: projectDataType) {
             image: "/karlyPage.png",
             url: "https://marketkarly-team.github.io/marketkarly-client/client/page/home.html",
             github: "https://github.com/marketkarly-team/marketkarly-client",
-            introduction: ' 마켓 컬리 웹사이트를 바닐라자바스크립트로 클론 코딩한 팀 프로젝트입니다.  효율적인 협업과 코드 품질 향상을 위하여 코드리뷰와 ESLint를 활용한 코드 일관성 유지하였습니다.'
+            introduction: '마켓 컬리 웹사이트를 바닐라자바스크립트로 클론 코딩한 팀 프로젝트입니다.  효율적인 협업과 코드 품질 향상을 위하여 코드리뷰와 ESLint를 활용한 코드 일관성 유지하였습니다.'
         },
         {
             id: 4,
@@ -41,7 +41,7 @@ export function ProjectDataContext({ children }: projectDataType) {
             image: "/movieAppPage.png",
             url: "https://dolfin-movie.netlify.app/",
             github: "https://github.com/chaewon0128/nomad-movie-app",
-            introduction: '리액트로 제작한 영화 정보 웹페이지 입니다.'
+            introduction: '리액트로 제작한 영화 정보 웹페이지 입니다. 영화 데이터베이스 API를 활용하여 실시간 영화 정보 확인이 가능합니다. '
         },
         {
             id: 5,
@@ -50,16 +50,16 @@ export function ProjectDataContext({ children }: projectDataType) {
             image: "/pomodoroPage.png",
             url: "https://dolfin-pomodoro-timer.netlify.app/",
             github: "https://github.com/chaewon0128/nomad-pomodoro-timer",
-            introduction: '리액트로 제작한 뽀모도로 타이머 입니다.'
+            introduction: '리액트로 제작한 뽀모도로 타이머 입니다. '
         },
         {
             id: 6,
             name: "Tweety",
             steck: ["Next.js", "TypeScript", "tailwindCSS", "Prisma", "SWR"],
-            image: "/tweety.png",
+            image: "/tweety2.png",
             url: "https://tweety-gz44cvyx8-chaewon0128.vercel.app/",
             github: "https://github.com/chaewon0128/tweety",
-            introduction: 'next.js로 제작한 Serverless SNS 서비스 입니다.'
+            introduction: 'next.js로 제작한 Serverless SNS 서비스 입니다. 회원가입, 로그인, 로그아웃이 가능하고 게시물 작성, 삭제, 좋아요 기능과 코멘트 작성 기능을 구현 하였습니다.'
         },
     ]
 
@@ -69,4 +69,5 @@ export function ProjectDataContext({ children }: projectDataType) {
         </ProjectContext.Provider>
     );
 }
+
 
