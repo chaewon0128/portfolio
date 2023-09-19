@@ -11,7 +11,6 @@ import Overlay from '@/components/overlay/Overlay';
 export default function About() {
     const [isLoading, setIsLoading] = useState(true)
 
-    // gsap.config({ nullTargetWarn: false })
     const onNavigate = (url: string) => {
         window.open(url, '_blank');
     }
