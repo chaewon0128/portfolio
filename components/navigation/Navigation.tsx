@@ -12,7 +12,7 @@ export default function Navigation() {
                 </div>
                 <ul className="flex justify-between w-60 md:text-lg">
                     <li className="font-thin"><a href="#about">about</a></li>
-                    <li className="font-thin"><a href="#prject">project</a></li>
+                    <li className="font-thin"><a href="#project">project</a></li>
                     <li className="font-thin"><a href="#contact">contact</a></li>
                 </ul>
             </div>
