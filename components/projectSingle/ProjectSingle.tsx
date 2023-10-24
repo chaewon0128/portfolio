@@ -41,13 +41,13 @@ export default function ProjectSingle({ project }: ProjectSingleType) {
 
     return (
         <div className="scroll-section h-[100vh] w-[100vw] my-10 flex flex-col justify-center items-center relative text-yellow-50  pt-28 lg:px-[200px] " ref={showRef}>
-            <div className="section relative w-[500px] h-96 bottom-[150px] lg:w-[600px] lg:h-[400px]">
+            <div className="section w-[600px] h-[400px] mb-10">
                 <Image src={imageUrl} alt={`${project.name}의 이미지`} fill />
             </div>
-            <section className=" section w-[80%] h-[250px] xl:h-[330px] md:flex md:justify-center md:gap-10 lg:gap-10 xl:gap-[100px]">
+            <section className=" section w-[80%] h-[200px] xl:h-[330px] md:flex md:justify-center md:gap-10 lg:gap-10 xl:gap-[100px]">
                 <h3 className="inline mb-3 text-4xl font-be-vietnam md:text-7xl lg:text-8xl">{project.name}</h3>
                 <div className="mt-5 md:mt-0">
-                    <p className="text-xl leading-[30px] md:text-2xl w-[450px] md:w-[450px] md:leading-10 xl:leading-[50px]  xl:text-3xl lg:w-[600px]">{project.introduction}</p>
+                    <p className="text-xl leading-[20px] md:text-xl w-[450px] md:w-[450px] md:leading-9 xl:leading-[40px]  xl:text-2xl lg:w-[600px]">{project.introduction}</p>
                     <div className="z-10 pt-5">
                         {project.steck?.map((item, i) => <div className={`inline-block bg-yellow-50 text-sm text-black font-bold p-2 mr-2 mb-2 ${i >= 2 ? 'top-28' : ''}`} key={i}>{item}</div>)}
                     </div>
